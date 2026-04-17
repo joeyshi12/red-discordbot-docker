@@ -12,10 +12,7 @@ Use the following `compose.yaml` to run Redbot:
 services:
   redbot:
     container_name: redbot
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: redbot-custom:latest
+    image: ghcr.io/joeyshi12/red-discordbot-docker:latest
     restart: unless-stopped
     environment:
       TOKEN: "${DISCORD_BOT_TOKEN}"
